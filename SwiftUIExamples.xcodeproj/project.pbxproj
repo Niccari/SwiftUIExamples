@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		2537D301269B02DD00076524 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D300269B02DD00076524 /* User.swift */; };
 		2570C0C6269DA49A00247F9C /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0C5269DA49A00247F9C /* Navigator.swift */; };
 		2570C0C8269DA78600247F9C /* NavigatorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0C7269DA78600247F9C /* NavigatorStatus.swift */; };
+		2570C0CB269DB5BF00247F9C /* GoogleMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0CA269DB5BF00247F9C /* GoogleMapOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,10 @@
 		2537D300269B02DD00076524 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2570C0C5269DA49A00247F9C /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		2570C0C7269DA78600247F9C /* NavigatorStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorStatus.swift; sourceTree = "<group>"; };
+		2570C0CA269DB5BF00247F9C /* GoogleMapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapOverlay.swift; sourceTree = "<group>"; };
+		58698271601FAC9CCD17F487 /* Pods-SwiftUIExamples (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIExamples (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		5CDDB68C158933E1AE272693 /* Pods-SwiftUIExamples (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIExamples (iOS).release.xcconfig"; path = "Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		BFF34417D113E9B0B31246DE /* Pods_SwiftUIExamples__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIExamples__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +60,8 @@
 				2537D2C7269AE7A300076524 /* Shared */,
 				2537D2D1269AE7A300076524 /* iOS */,
 				2537D2D0269AE7A300076524 /* Products */,
+				E6BA4FB4984FED6ACEE14FAF /* Pods */,
+				8869C4F2381CDCA3A5DBFA97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +97,7 @@
 		2537D2E9269AE8FD00076524 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2570C0C9269DB59A00247F9C /* GoogleMapOverlay */,
 				2570C0C2269DA31700247F9C /* CommentList */,
 				2570C0C5269DA49A00247F9C /* Navigator.swift */,
 			);
@@ -141,6 +149,31 @@
 			path = CommentList;
 			sourceTree = "<group>";
 		};
+		2570C0C9269DB59A00247F9C /* GoogleMapOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				2570C0CA269DB5BF00247F9C /* GoogleMapOverlay.swift */,
+			);
+			path = GoogleMapOverlay;
+			sourceTree = "<group>";
+		};
+		8869C4F2381CDCA3A5DBFA97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF34417D113E9B0B31246DE /* Pods_SwiftUIExamples__iOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6BA4FB4984FED6ACEE14FAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58698271601FAC9CCD17F487 /* Pods-SwiftUIExamples (iOS).debug.xcconfig */,
+				5CDDB68C158933E1AE272693 /* Pods-SwiftUIExamples (iOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2537D2E3269AE7A300076524 /* Build configuration list for PBXNativeTarget "SwiftUIExamples (iOS)" */;
 			buildPhases = (
+				F254AE8F91BC092CAAB6EAB6 /* [CP] Check Pods Manifest.lock */,
 				2537D2CB269AE7A300076524 /* Sources */,
 				2537D2CC269AE7A300076524 /* Frameworks */,
 				2537D2CD269AE7A300076524 /* Resources */,
+				FFA074F5934D081F6FDBAF52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +239,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F254AE8F91BC092CAAB6EAB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIExamples (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA074F5934D081F6FDBAF52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS)-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS)-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2537D2CB269AE7A300076524 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -211,6 +288,7 @@
 			files = (
 				2537D2F1269AE91500076524 /* UserImage.swift in Sources */,
 				2537D2F2269AE91500076524 /* CommentList.swift in Sources */,
+				2570C0CB269DB5BF00247F9C /* GoogleMapOverlay.swift in Sources */,
 				2537D2FA269AE94D00076524 /* DateDatastore.swift in Sources */,
 				2537D2FF269AFF1A00076524 /* HeroImage.swift in Sources */,
 				2537D2F6269AE94400076524 /* Comment.swift in Sources */,
@@ -341,11 +419,13 @@
 		};
 		2537D2E4269AE7A300076524 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58698271601FAC9CCD17F487 /* Pods-SwiftUIExamples (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,11 +442,13 @@
 		};
 		2537D2E5269AE7A300076524 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CDDB68C158933E1AE272693 /* Pods-SwiftUIExamples (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (

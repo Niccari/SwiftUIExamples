@@ -15,7 +15,10 @@ struct Navigator: View {
             VStack {
                 NavigationLink(destination: CommentList()) {
                     Text("CommentList")
-                }
+                }.padding()
+                NavigationLink(destination: GoogleMapOverlay()) {
+                    Text("GoogleMapOverlay")
+                }.padding()
             }
         }
     }
