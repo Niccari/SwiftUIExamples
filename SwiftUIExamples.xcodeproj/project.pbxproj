@@ -12,11 +12,13 @@
 		2537D2EF269AE91500076524 /* ImageUrlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2EB269AE91500076524 /* ImageUrlViewModel.swift */; };
 		2537D2F0269AE91500076524 /* CommentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2EC269AE91500076524 /* CommentRow.swift */; };
 		2537D2F1269AE91500076524 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2ED269AE91500076524 /* UserImage.swift */; };
-		2537D2F2269AE91500076524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2EE269AE91500076524 /* ContentView.swift */; };
+		2537D2F2269AE91500076524 /* CommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2EE269AE91500076524 /* CommentList.swift */; };
 		2537D2F6269AE94400076524 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2F4269AE94400076524 /* Comment.swift */; };
 		2537D2FA269AE94D00076524 /* DateDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2F9269AE94D00076524 /* DateDatastore.swift */; };
 		2537D2FF269AFF1A00076524 /* HeroImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2FE269AFF1A00076524 /* HeroImage.swift */; };
 		2537D301269B02DD00076524 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D300269B02DD00076524 /* User.swift */; };
+		2570C0C6269DA49A00247F9C /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0C5269DA49A00247F9C /* Navigator.swift */; };
+		2570C0C8269DA78600247F9C /* NavigatorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0C7269DA78600247F9C /* NavigatorStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +29,13 @@
 		2537D2EB269AE91500076524 /* ImageUrlViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUrlViewModel.swift; sourceTree = "<group>"; };
 		2537D2EC269AE91500076524 /* CommentRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRow.swift; sourceTree = "<group>"; };
 		2537D2ED269AE91500076524 /* UserImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
-		2537D2EE269AE91500076524 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2537D2EE269AE91500076524 /* CommentList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentList.swift; sourceTree = "<group>"; };
 		2537D2F4269AE94400076524 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		2537D2F9269AE94D00076524 /* DateDatastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateDatastore.swift; sourceTree = "<group>"; };
 		2537D2FE269AFF1A00076524 /* HeroImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroImage.swift; sourceTree = "<group>"; };
 		2537D300269B02DD00076524 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2570C0C5269DA49A00247F9C /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		2570C0C7269DA78600247F9C /* NavigatorStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +90,8 @@
 		2537D2E9269AE8FD00076524 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2537D2EC269AE91500076524 /* CommentRow.swift */,
-				2537D2EE269AE91500076524 /* ContentView.swift */,
-				2537D2FE269AFF1A00076524 /* HeroImage.swift */,
-				2537D2ED269AE91500076524 /* UserImage.swift */,
+				2570C0C2269DA31700247F9C /* CommentList */,
+				2570C0C5269DA49A00247F9C /* Navigator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +99,7 @@
 		2537D2EA269AE91500076524 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2570C0C7269DA78600247F9C /* NavigatorStatus.swift */,
 				2537D2EB269AE91500076524 /* ImageUrlViewModel.swift */,
 			);
 			path = ViewModel;
@@ -105,8 +108,7 @@
 		2537D2F3269AE94400076524 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2537D2F4269AE94400076524 /* Comment.swift */,
-				2537D300269B02DD00076524 /* User.swift */,
+				2570C0C1269DA30800247F9C /* CommentList */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +119,26 @@
 				2537D2F9269AE94D00076524 /* DateDatastore.swift */,
 			);
 			path = Datastore;
+			sourceTree = "<group>";
+		};
+		2570C0C1269DA30800247F9C /* CommentList */ = {
+			isa = PBXGroup;
+			children = (
+				2537D2F4269AE94400076524 /* Comment.swift */,
+				2537D300269B02DD00076524 /* User.swift */,
+			);
+			path = CommentList;
+			sourceTree = "<group>";
+		};
+		2570C0C2269DA31700247F9C /* CommentList */ = {
+			isa = PBXGroup;
+			children = (
+				2537D2EC269AE91500076524 /* CommentRow.swift */,
+				2537D2EE269AE91500076524 /* CommentList.swift */,
+				2537D2FE269AFF1A00076524 /* HeroImage.swift */,
+				2537D2ED269AE91500076524 /* UserImage.swift */,
+			);
+			path = CommentList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,11 +210,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2537D2F1269AE91500076524 /* UserImage.swift in Sources */,
-				2537D2F2269AE91500076524 /* ContentView.swift in Sources */,
+				2537D2F2269AE91500076524 /* CommentList.swift in Sources */,
 				2537D2FA269AE94D00076524 /* DateDatastore.swift in Sources */,
 				2537D2FF269AFF1A00076524 /* HeroImage.swift in Sources */,
 				2537D2F6269AE94400076524 /* Comment.swift in Sources */,
+				2570C0C6269DA49A00247F9C /* Navigator.swift in Sources */,
 				2537D301269B02DD00076524 /* User.swift in Sources */,
+				2570C0C8269DA78600247F9C /* NavigatorStatus.swift in Sources */,
 				2537D2EF269AE91500076524 /* ImageUrlViewModel.swift in Sources */,
 				2537D2F0269AE91500076524 /* CommentRow.swift in Sources */,
 				2537D2DB269AE7A300076524 /* SwiftUIExamplesApp.swift in Sources */,

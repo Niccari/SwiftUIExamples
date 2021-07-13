@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ContentView: View {
+struct CommentList: View {
     @State private var edittingComment = ""
     @State private var loginUser = User(
         id: "123",
@@ -136,8 +136,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CommentList_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CommentList()
     }
 }
