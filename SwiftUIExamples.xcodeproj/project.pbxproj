@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,11 +12,19 @@
 		2537D2EF269AE91500076524 /* ImageUrlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2EB269AE91500076524 /* ImageUrlViewModel.swift */; };
 		2537D2F0269AE91500076524 /* CommentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2EC269AE91500076524 /* CommentRow.swift */; };
 		2537D2F1269AE91500076524 /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2ED269AE91500076524 /* UserImage.swift */; };
-		2537D2F2269AE91500076524 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2EE269AE91500076524 /* ContentView.swift */; };
+		2537D2F2269AE91500076524 /* CommentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2EE269AE91500076524 /* CommentList.swift */; };
 		2537D2F6269AE94400076524 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2F4269AE94400076524 /* Comment.swift */; };
 		2537D2FA269AE94D00076524 /* DateDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2F9269AE94D00076524 /* DateDatastore.swift */; };
 		2537D2FF269AFF1A00076524 /* HeroImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D2FE269AFF1A00076524 /* HeroImage.swift */; };
 		2537D301269B02DD00076524 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537D300269B02DD00076524 /* User.swift */; };
+		2570C0C6269DA49A00247F9C /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0C5269DA49A00247F9C /* Navigator.swift */; };
+		2570C0C8269DA78600247F9C /* NavigatorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0C7269DA78600247F9C /* NavigatorStatus.swift */; };
+		2570C0CB269DB5BF00247F9C /* GoogleMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0CA269DB5BF00247F9C /* GoogleMapOverlay.swift */; };
+		2570C0CE269DBDFB00247F9C /* GeoLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0CD269DBDFB00247F9C /* GeoLine.swift */; };
+		2570C0D0269DBE9800247F9C /* GeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0CF269DBE9800247F9C /* GeoPoint.swift */; };
+		2570C0D3269DC08600247F9C /* geolines.json in Resources */ = {isa = PBXBuildFile; fileRef = 2570C0D2269DC08600247F9C /* geolines.json */; };
+		2570C0D6269DC4FE00247F9C /* GeoLinesDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0D5269DC4FE00247F9C /* GeoLinesDatastore.swift */; };
+		2570C0D8269DCBD400247F9C /* GoogleMapArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0D7269DCBD400247F9C /* GoogleMapArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +35,22 @@
 		2537D2EB269AE91500076524 /* ImageUrlViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUrlViewModel.swift; sourceTree = "<group>"; };
 		2537D2EC269AE91500076524 /* CommentRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRow.swift; sourceTree = "<group>"; };
 		2537D2ED269AE91500076524 /* UserImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
-		2537D2EE269AE91500076524 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2537D2EE269AE91500076524 /* CommentList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentList.swift; sourceTree = "<group>"; };
 		2537D2F4269AE94400076524 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		2537D2F9269AE94D00076524 /* DateDatastore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateDatastore.swift; sourceTree = "<group>"; };
 		2537D2FE269AFF1A00076524 /* HeroImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroImage.swift; sourceTree = "<group>"; };
 		2537D300269B02DD00076524 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2570C0C5269DA49A00247F9C /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		2570C0C7269DA78600247F9C /* NavigatorStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorStatus.swift; sourceTree = "<group>"; };
+		2570C0CA269DB5BF00247F9C /* GoogleMapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapOverlay.swift; sourceTree = "<group>"; };
+		2570C0CD269DBDFB00247F9C /* GeoLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLine.swift; sourceTree = "<group>"; };
+		2570C0CF269DBE9800247F9C /* GeoPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoPoint.swift; sourceTree = "<group>"; };
+		2570C0D2269DC08600247F9C /* geolines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = geolines.json; sourceTree = "<group>"; };
+		2570C0D5269DC4FE00247F9C /* GeoLinesDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLinesDatastore.swift; sourceTree = "<group>"; };
+		2570C0D7269DCBD400247F9C /* GoogleMapArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapArea.swift; sourceTree = "<group>"; };
+		58698271601FAC9CCD17F487 /* Pods-SwiftUIExamples (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIExamples (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		5CDDB68C158933E1AE272693 /* Pods-SwiftUIExamples (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIExamples (iOS).release.xcconfig"; path = "Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		BFF34417D113E9B0B31246DE /* Pods_SwiftUIExamples__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIExamples__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +70,15 @@
 				2537D2C7269AE7A300076524 /* Shared */,
 				2537D2D1269AE7A300076524 /* iOS */,
 				2537D2D0269AE7A300076524 /* Products */,
+				E6BA4FB4984FED6ACEE14FAF /* Pods */,
+				8869C4F2381CDCA3A5DBFA97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		2537D2C7269AE7A300076524 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2570C0D1269DBFEA00247F9C /* Resource */,
 				2537D2F8269AE94D00076524 /* Datastore */,
 				2537D2C8269AE7A300076524 /* SwiftUIExamplesApp.swift */,
 				2537D2F3269AE94400076524 /* Model */,
@@ -86,10 +108,9 @@
 		2537D2E9269AE8FD00076524 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2537D2EC269AE91500076524 /* CommentRow.swift */,
-				2537D2EE269AE91500076524 /* ContentView.swift */,
-				2537D2FE269AFF1A00076524 /* HeroImage.swift */,
-				2537D2ED269AE91500076524 /* UserImage.swift */,
+				2570C0C9269DB59A00247F9C /* GoogleMapOverlay */,
+				2570C0C2269DA31700247F9C /* CommentList */,
+				2570C0C5269DA49A00247F9C /* Navigator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +118,7 @@
 		2537D2EA269AE91500076524 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2570C0C7269DA78600247F9C /* NavigatorStatus.swift */,
 				2537D2EB269AE91500076524 /* ImageUrlViewModel.swift */,
 			);
 			path = ViewModel;
@@ -105,8 +127,8 @@
 		2537D2F3269AE94400076524 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				2537D2F4269AE94400076524 /* Comment.swift */,
-				2537D300269B02DD00076524 /* User.swift */,
+				2570C0CC269DBDE600247F9C /* GoogleMapOverlay */,
+				2570C0C1269DA30800247F9C /* CommentList */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,8 +137,72 @@
 			isa = PBXGroup;
 			children = (
 				2537D2F9269AE94D00076524 /* DateDatastore.swift */,
+				2570C0D5269DC4FE00247F9C /* GeoLinesDatastore.swift */,
 			);
 			path = Datastore;
+			sourceTree = "<group>";
+		};
+		2570C0C1269DA30800247F9C /* CommentList */ = {
+			isa = PBXGroup;
+			children = (
+				2537D2F4269AE94400076524 /* Comment.swift */,
+				2537D300269B02DD00076524 /* User.swift */,
+			);
+			path = CommentList;
+			sourceTree = "<group>";
+		};
+		2570C0C2269DA31700247F9C /* CommentList */ = {
+			isa = PBXGroup;
+			children = (
+				2537D2EC269AE91500076524 /* CommentRow.swift */,
+				2537D2EE269AE91500076524 /* CommentList.swift */,
+				2537D2FE269AFF1A00076524 /* HeroImage.swift */,
+				2537D2ED269AE91500076524 /* UserImage.swift */,
+			);
+			path = CommentList;
+			sourceTree = "<group>";
+		};
+		2570C0C9269DB59A00247F9C /* GoogleMapOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				2570C0CA269DB5BF00247F9C /* GoogleMapOverlay.swift */,
+				2570C0D7269DCBD400247F9C /* GoogleMapArea.swift */,
+			);
+			path = GoogleMapOverlay;
+			sourceTree = "<group>";
+		};
+		2570C0CC269DBDE600247F9C /* GoogleMapOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				2570C0CD269DBDFB00247F9C /* GeoLine.swift */,
+				2570C0CF269DBE9800247F9C /* GeoPoint.swift */,
+			);
+			path = GoogleMapOverlay;
+			sourceTree = "<group>";
+		};
+		2570C0D1269DBFEA00247F9C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2570C0D2269DC08600247F9C /* geolines.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8869C4F2381CDCA3A5DBFA97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF34417D113E9B0B31246DE /* Pods_SwiftUIExamples__iOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6BA4FB4984FED6ACEE14FAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58698271601FAC9CCD17F487 /* Pods-SwiftUIExamples (iOS).debug.xcconfig */,
+				5CDDB68C158933E1AE272693 /* Pods-SwiftUIExamples (iOS).release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2537D2E3269AE7A300076524 /* Build configuration list for PBXNativeTarget "SwiftUIExamples (iOS)" */;
 			buildPhases = (
+				F254AE8F91BC092CAAB6EAB6 /* [CP] Check Pods Manifest.lock */,
 				2537D2CB269AE7A300076524 /* Sources */,
 				2537D2CC269AE7A300076524 /* Frameworks */,
 				2537D2CD269AE7A300076524 /* Resources */,
+				FFA074F5934D081F6FDBAF52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,10 +265,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				2537D2DF269AE7A300076524 /* Assets.xcassets in Resources */,
+				2570C0D3269DC08600247F9C /* geolines.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F254AE8F91BC092CAAB6EAB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIExamples (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA074F5934D081F6FDBAF52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS)-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS)-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2537D2CB269AE7A300076524 /* Sources */ = {
@@ -188,11 +319,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				2537D2F1269AE91500076524 /* UserImage.swift in Sources */,
-				2537D2F2269AE91500076524 /* ContentView.swift in Sources */,
+				2537D2F2269AE91500076524 /* CommentList.swift in Sources */,
+				2570C0D8269DCBD400247F9C /* GoogleMapArea.swift in Sources */,
+				2570C0CB269DB5BF00247F9C /* GoogleMapOverlay.swift in Sources */,
 				2537D2FA269AE94D00076524 /* DateDatastore.swift in Sources */,
+				2570C0D0269DBE9800247F9C /* GeoPoint.swift in Sources */,
+				2570C0CE269DBDFB00247F9C /* GeoLine.swift in Sources */,
 				2537D2FF269AFF1A00076524 /* HeroImage.swift in Sources */,
 				2537D2F6269AE94400076524 /* Comment.swift in Sources */,
+				2570C0C6269DA49A00247F9C /* Navigator.swift in Sources */,
 				2537D301269B02DD00076524 /* User.swift in Sources */,
+				2570C0C8269DA78600247F9C /* NavigatorStatus.swift in Sources */,
+				2570C0D6269DC4FE00247F9C /* GeoLinesDatastore.swift in Sources */,
 				2537D2EF269AE91500076524 /* ImageUrlViewModel.swift in Sources */,
 				2537D2F0269AE91500076524 /* CommentRow.swift in Sources */,
 				2537D2DB269AE7A300076524 /* SwiftUIExamplesApp.swift in Sources */,
@@ -317,11 +455,14 @@
 		};
 		2537D2E4269AE7A300076524 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58698271601FAC9CCD17F487 /* Pods-SwiftUIExamples (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GTQNJZ5G2;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,11 +479,14 @@
 		};
 		2537D2E5269AE7A300076524 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CDDB68C158933E1AE272693 /* Pods-SwiftUIExamples (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3GTQNJZ5G2;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
