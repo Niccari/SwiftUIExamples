@@ -20,6 +20,10 @@
 		2570C0C6269DA49A00247F9C /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0C5269DA49A00247F9C /* Navigator.swift */; };
 		2570C0C8269DA78600247F9C /* NavigatorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0C7269DA78600247F9C /* NavigatorStatus.swift */; };
 		2570C0CB269DB5BF00247F9C /* GoogleMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0CA269DB5BF00247F9C /* GoogleMapOverlay.swift */; };
+		2570C0CE269DBDFB00247F9C /* GeoLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0CD269DBDFB00247F9C /* GeoLine.swift */; };
+		2570C0D0269DBE9800247F9C /* GeoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0CF269DBE9800247F9C /* GeoPoint.swift */; };
+		2570C0D3269DC08600247F9C /* geolines.json in Resources */ = {isa = PBXBuildFile; fileRef = 2570C0D2269DC08600247F9C /* geolines.json */; };
+		2570C0D6269DC4FE00247F9C /* GeoLinesDatastore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2570C0D5269DC4FE00247F9C /* GeoLinesDatastore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		2570C0C5269DA49A00247F9C /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		2570C0C7269DA78600247F9C /* NavigatorStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorStatus.swift; sourceTree = "<group>"; };
 		2570C0CA269DB5BF00247F9C /* GoogleMapOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapOverlay.swift; sourceTree = "<group>"; };
+		2570C0CD269DBDFB00247F9C /* GeoLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLine.swift; sourceTree = "<group>"; };
+		2570C0CF269DBE9800247F9C /* GeoPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoPoint.swift; sourceTree = "<group>"; };
+		2570C0D2269DC08600247F9C /* geolines.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = geolines.json; sourceTree = "<group>"; };
+		2570C0D5269DC4FE00247F9C /* GeoLinesDatastore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLinesDatastore.swift; sourceTree = "<group>"; };
 		58698271601FAC9CCD17F487 /* Pods-SwiftUIExamples (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIExamples (iOS).debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		5CDDB68C158933E1AE272693 /* Pods-SwiftUIExamples (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIExamples (iOS).release.xcconfig"; path = "Target Support Files/Pods-SwiftUIExamples (iOS)/Pods-SwiftUIExamples (iOS).release.xcconfig"; sourceTree = "<group>"; };
 		BFF34417D113E9B0B31246DE /* Pods_SwiftUIExamples__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIExamples__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +76,7 @@
 		2537D2C7269AE7A300076524 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2570C0D1269DBFEA00247F9C /* Resource */,
 				2537D2F8269AE94D00076524 /* Datastore */,
 				2537D2C8269AE7A300076524 /* SwiftUIExamplesApp.swift */,
 				2537D2F3269AE94400076524 /* Model */,
@@ -116,6 +125,7 @@
 		2537D2F3269AE94400076524 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2570C0CC269DBDE600247F9C /* GoogleMapOverlay */,
 				2570C0C1269DA30800247F9C /* CommentList */,
 			);
 			path = Model;
@@ -125,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				2537D2F9269AE94D00076524 /* DateDatastore.swift */,
+				2570C0D5269DC4FE00247F9C /* GeoLinesDatastore.swift */,
 			);
 			path = Datastore;
 			sourceTree = "<group>";
@@ -155,6 +166,23 @@
 				2570C0CA269DB5BF00247F9C /* GoogleMapOverlay.swift */,
 			);
 			path = GoogleMapOverlay;
+			sourceTree = "<group>";
+		};
+		2570C0CC269DBDE600247F9C /* GoogleMapOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				2570C0CD269DBDFB00247F9C /* GeoLine.swift */,
+				2570C0CF269DBE9800247F9C /* GeoPoint.swift */,
+			);
+			path = GoogleMapOverlay;
+			sourceTree = "<group>";
+		};
+		2570C0D1269DBFEA00247F9C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2570C0D2269DC08600247F9C /* geolines.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		8869C4F2381CDCA3A5DBFA97 /* Frameworks */ = {
@@ -234,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2537D2DF269AE7A300076524 /* Assets.xcassets in Resources */,
+				2570C0D3269DC08600247F9C /* geolines.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +319,14 @@
 				2537D2F2269AE91500076524 /* CommentList.swift in Sources */,
 				2570C0CB269DB5BF00247F9C /* GoogleMapOverlay.swift in Sources */,
 				2537D2FA269AE94D00076524 /* DateDatastore.swift in Sources */,
+				2570C0D0269DBE9800247F9C /* GeoPoint.swift in Sources */,
+				2570C0CE269DBDFB00247F9C /* GeoLine.swift in Sources */,
 				2537D2FF269AFF1A00076524 /* HeroImage.swift in Sources */,
 				2537D2F6269AE94400076524 /* Comment.swift in Sources */,
 				2570C0C6269DA49A00247F9C /* Navigator.swift in Sources */,
 				2537D301269B02DD00076524 /* User.swift in Sources */,
 				2570C0C8269DA78600247F9C /* NavigatorStatus.swift in Sources */,
+				2570C0D6269DC4FE00247F9C /* GeoLinesDatastore.swift in Sources */,
 				2537D2EF269AE91500076524 /* ImageUrlViewModel.swift in Sources */,
 				2537D2F0269AE91500076524 /* CommentRow.swift in Sources */,
 				2537D2DB269AE7A300076524 /* SwiftUIExamplesApp.swift in Sources */,
